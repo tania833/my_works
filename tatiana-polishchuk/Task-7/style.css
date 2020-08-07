@@ -64,6 +64,7 @@ h1 {
     letter-spacing: -0.55px;
     line-height: 34px;
     text-transform: uppercase;
+    word-wrap: normal;
 }
 
 .quotes {
@@ -99,3 +100,4 @@ button:hover {
     background-color: rgb(116, 27, 27);
     transform: scale(1.2);
 }
+

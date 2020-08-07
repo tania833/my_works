@@ -1,6 +1,7 @@
 @font-face {
-    font-family: 'Hans-Kendrick';
-    src: url(./fonts/NeueHansKendrick-Regular.woff) format('woff'), url(./fonts/NeueHansKendrick-Regular.woff2) format('woff2');
+    font-family: "Hans-Kendrick";
+    src: url(./fonts/NeueHansKendrick-Regular.woff) format("woff"),
+        url(./fonts/NeueHansKendrick-Regular.woff2) format("woff2");
     font-weight: normal;
     font-style: normal;
 }
@@ -12,16 +13,17 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 1600px;
-    height: 1400px;
-    background-color: #E2E7EC;
+    max-width: 1600px;
+    max-height: 1400px;
+    background-color: #e2e7ec;
 }
 
 .content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr, 1fr;
-    padding: 90px 240px;
+    padding: 5%;
+    box-sizing: border-box;
     grid-gap: 20px;
 }
 
@@ -29,14 +31,14 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 540px;
-    background: linear-gradient( rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.6)), url(./images/Layer\ 8@1X.png);
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.6)), url(./images/Layer\ 8@1X.png);
     background-repeat: no-repeat;
+    background-size: cover;
     grid-column: 1/3;
     grid-row: 1/2;
 }
 
 .main-article:hover {
-    transform: scale(1.2);
     cursor: pointer;
 }
 
@@ -45,28 +47,33 @@ body {
     flex-direction: column;
     min-height: 540px;
     background-color: white;
-    flex:1 1 auto;
+    flex: 1 1 auto;
+}
+
+.article-img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .article:hover {
-    transform: scale(1.2);
     cursor: pointer;
 }
 
 .main-article__date {
     padding: 405px 0 20px 30px;
-    font-family: 'Hans-Kendrick';
+    font-family: "Hans-Kendrick";
     font-size: 13px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .main-article__title {
     padding: 0 265px 20px 30px;
-    font-family: 'Hans-Kendrick';
+    font-family: "Hans-Kendrick";
     text-transform: uppercase;
     font-weight: bold;
     font-size: 30px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .article__image {
@@ -76,14 +83,14 @@ body {
 .article__date {
     padding-left: 30px;
     margin-bottom: 20px;
-    font-family: 'Hans-Kendrick';
+    font-family: "Hans-Kendrick";
     font-size: 13px;
     color: #818181;
 }
 
 .article__title {
     padding: 0 30px;
-    font-family: 'Hans-Kendrick';
+    font-family: "Hans-Kendrick";
     text-transform: uppercase;
     font-weight: bold;
     font-size: 22px;
@@ -91,5 +98,25 @@ body {
 
 .article__author {
     margin-top: auto;
+}
+.author-img {
     padding: 10px 30px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: none;
+    }
 }

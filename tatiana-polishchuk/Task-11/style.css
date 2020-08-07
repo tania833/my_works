@@ -133,7 +133,7 @@ textarea::-webkit-input-placeholder {
 
 .contacts {
     margin-bottom: auto;
-    padding: 0 200px;
+    padding: 0 10%;
 }
 
 .contacts__title {
@@ -184,3 +184,38 @@ textarea::-webkit-input-placeholder {
 .link{
     color: red;
 }
+
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+    .form__input, .form__textarea{
+        width: 400px;
+    }
+    .contacts{
+        padding-left: 5%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+    .form__input, .form__textarea{
+        width: 300px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        /* max-width: none; */
+    }
+    .content{
+        flex-direction: column;
+    }
+    .contacts{
+        color: white;
+    }
+}
+
