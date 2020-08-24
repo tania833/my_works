@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3f8b4cce75.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dist/style.css">
+    <title>Exam Tetiana Polishchuk</title>
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <symbol id="select" width="60" height="61" viewbox="0 0 60 61">
+            <g>
+                <g>
+                    <path fill="#ff6363"
+                        d="M41.672 2.867c3.656 1.547 6.842 3.68 9.562 6.398 2.718 2.72 4.852 5.907 6.399 9.563 1.547 3.656 2.32 7.548 2.32 11.672 0 4.126-.773 8.015-2.32 11.672-1.547 3.656-3.68 6.844-6.399 9.562-2.72 2.72-5.906 4.852-9.562 6.399-3.656 1.546-7.548 2.32-11.672 2.32-4.127 0-8.016-.774-11.672-2.32-3.656-1.547-6.844-3.679-9.562-6.399-2.72-2.718-4.852-5.906-6.399-9.562C.82 38.515.047 34.626.047 30.5c0-4.124.773-8.016 2.32-11.672 1.547-3.656 3.678-6.842 6.399-9.563 2.718-2.717 5.906-4.851 9.562-6.398C21.984 1.32 25.873.547 30 .547c4.124 0 8.016.773 11.672 2.32zm-.914 53.016c3.326-1.453 6.258-3.397 8.789-5.836 2.437-2.531 4.381-5.46 5.836-8.79 1.452-3.326 2.18-6.912 2.18-10.757 0-3.843-.728-7.43-2.18-10.758-1.455-3.327-3.4-6.258-5.836-8.79-2.531-2.436-5.463-4.38-8.79-5.835C37.43 3.665 33.844 2.937 30 2.937c-3.845 0-7.431.728-10.758 2.18-3.329 1.455-6.258 3.4-8.789 5.836-2.439 2.531-4.383 5.462-5.836 8.789-1.454 3.329-2.18 6.915-2.18 10.758 0 3.845.726 7.43 2.18 10.758 1.453 3.329 3.397 6.258 5.836 8.789 2.531 2.439 5.46 4.383 8.79 5.836 3.326 1.454 6.912 2.18 10.757 2.18 3.843 0 7.429-.726 10.758-2.18zm5.484-36.633c.514 0 .96.189 1.336.562.281.376.422.822.422 1.336 0 .517-.19.914-.562 1.196L26.905 42.312c-.094.19-.26.306-.492.352-.235.048-.446.07-.633.07-.281 0-.54-.022-.773-.07-.235-.046-.4-.163-.492-.352L16.5 34.297a1.818 1.818 0 0 1-.563-1.336c0-.514.187-.914.563-1.196.281-.373.679-.562 1.195-.562.514 0 .96.189 1.336.562l6.75 6.75 19.266-18.703c.281-.373.679-.562 1.195-.562z" />
+                </g>
+            </g>
+        </symbol>
+        <symbol id="scroll" width="15" height="8" viewbox="0 0 15 8">
+            <g>
+                <g>
+                    <path fill="#fff"
+                        d="M4.125 4.651L.75 1.276l.844-.844L7.5 6.34 13.406.362l.844.844-6.75 6.82-.844-.843z" />
+                </g>
+            </g>
+        </symbol>
+    </svg>
+    <div class="container">
+        <div class="header-wrapper">
+            <header class="header">
+                <div class="header-title">Bhromaon</div>
+                <div class="header-desc">Safe Travel Anywhere</div>
+                <div class="header-search">
+                    <form action="https://www.google.com/search?q" class="header-form">
+                        <input class="header-input" type="text" name="q" id="travel"
+                            placeholder="Search Your Travel Destination" minlength="4" re>
+                        <button class="header-button">Search </button>
+                    </form>
+                </div>
+                <div class="header-scroll">
+                    <a class="header-scroll-link" href="#main">
+                        <div class="header-scroll-text">Scroll Down</div>
+                        <div class="header-scroll-icon">
+                            <svg class="scroll-icon">
+                                <use xlink:href="#scroll"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="header-navigation">
+                    <div class="header-logo">Bhromaon</div>
+                    <nav class="header-nav">
+                        <ul class="header-nav-list">
+                            <div id="myLinks">
+                                <li class="header-nav-item"><a class="nav-item-link" href="#main">Who We Are</a></li>
+                                <li class="header-nav-item"><a class="nav-item-link" href="#places">What We Do</a></li>
+                                <li class="header-nav-item"><a class="nav-item-link" href="#tourists">Travel With Us</a>
+                                </li>
+                                <li class="header-nav-item"><a class="nav-item-link" href="#contacts">Contact Us</a>
+                                </li>
+                            </div>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <span class="nav-span">MENU</span>
+                                <svg class="nav-icon">
+                                    <use xlink:href="sprite.svg#icon-menu"></use>
+                                </svg>
+                            </a>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <main class="main">
+            <a name="main"></a>
+            <div class="main-why why" id="why">
+                <div class="why-description">
+                    <div class="why-title">Why Choose Us</div>
+                    <p class="why-para"> Tion and dislike men who are so beguiled and demoralized by desire by the
+                        charms of pleasure of the moment, so blinded by desire, that they cannot foresee </p>
+                    <p class="why-para">Ddislike men who are so beguiled and demoralized by the charms of pleasure of
+                        the moment, so blinded by desire, that.</p>
+                    <button class="btn">Explore Places </button>
+                </div>
+                <div class="why-pictures">
+                    <img src="images/house.png" alt="house" class="why-img1">
+                    <img src="images/mountains.png" alt="mountains" class="why-img2">
+                </div>
+            </div>
+            <div class="main-book book">
+                <div class="book-search">
+                    <svg class="book-img">
+                        <use xlink:href="sprite.svg#search"></use>
+                    </svg>
+                    <p class="book-para">Search Places</p>
+                </div>
+                <div class="book-select">
+                    <svg class="book-img">
+                        <use xlink:href="#select"></use>
+                    </svg>
+                    <p class="book-para">Select Places</p>
+                </div>
+                <div class="book-enjoy">
+                    <svg class="book-img">
+                        <use xlink:href="sprite.svg#enjoy"></use>
+                    </svg>
+                    <p class="book-para">Book & Enjoy</p>
+                </div>
+            </div>
+            <div class="main-places places">
+                <a name="places"></a>
+                <div class="places-first">
+                    <div class="places-card card">
+                        <div class="card-country">Spain </div>
+                        <div class="card-title">Grand Spain Madrid</div>
+                        <div class="card-desc">But I must explain to you how all this mistaken idea of account to
+                            denouncing pleasure and praising pain was account born and I account will give you a
+                            complete account of the system</div>
+                        <button class="btn">Book Now</button>
+                    </div>
+                </div>
+                <div class="places-second">
+                    <div class="places-card card card--right">
+                        <div class="card-country">Spain </div>
+                        <div class="card-title">Grand Spain Madrid</div>
+                        <div class="card-desc">But I must explain to you how all this mistaken idea of account to
+                            denouncing pleasure and praising pain was account born and I account will give you a
+                            complete account of the system</div>
+                        <button class="btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-tourists tourists">
+                <a name="tourists"></a>
+                <div class="tourists-title">What Our Tourist Say</div>
+                <div class="tourists-content">
+                    <div class="tourists-photo"><img class="tourists-img" src="images/card-man.png" alt="man"></div>
+                    <div class="tourists-card">
+                        <div class="tourists-name">Sam Sumon</div>
+                        <div class="tourists-text"><i class="fas fa-quote-left"></i> But I must explain to you how all this mistaken idea of account to
+                            denouncinpleasure and praising pain But I must explain to you how all this mistaken idea of
+                            account to nai denouncing pleasure and praising pain was account born and I account will
+                            give you a complete account of the system was account born and I account will give you a nai
+                            the complete account of the system</div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-contacts contacts">
+                <a name="contacts"></a>
+                <div class="contacts-logo">Bhromaon</div>
+                <div class="contacts-subtitle">Safe Travel Anywhere</div>
+                <div class="contacts-social">
+                    <ul class="contacts-list">
+                        <li class="contacts-list-item">
+                            <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="contacts-list-item"><a href="https://twitter.com/home?lang=ru" target="blank"><i
+                                    class="fab fa-twitter"></i></a></li>
+                        <li class="contacts-list-item"><a
+                                href="https://www.linkedin.com/in/tetiana-polishchuk-61632a1a7/" target="blank"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
+                        <li class="contacts-list-item"><a href="https://www.youtube.com/" target="blank"><i
+                                    class="fab fa-youtube"></i></a></li>
+                        <li class="contacts-list-item"><a href="https://www.pinterest.com/" target="blank"><i
+                                    class="fab fa-pinterest"></i></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+
+            } else {
+                x.style.display = "flex";
+            }
+        }
+    </script>
+</body>
+
+</html>
